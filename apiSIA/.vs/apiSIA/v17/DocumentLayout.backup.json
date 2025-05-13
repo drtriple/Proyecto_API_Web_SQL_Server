@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apisia\\controllers\\facultadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\controllers\\facultadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\apisia\\apisia\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\apisia\\apisia\\clases\\clsopefac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\clases\\clsopefac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "apiSIA\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "apiSIA\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T00:45:26.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsOpeFac.cs",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Clases\\clsOpeFac.cs",
+              "RelativeDocumentMoniker": "apiSIA\\Clases\\clsOpeFac.cs",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Clases\\clsOpeFac.cs",
+              "RelativeToolTip": "apiSIA\\Clases\\clsOpeFac.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T22:47:10.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "facultadController.cs",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Controllers\\facultadController.cs",
+              "RelativeDocumentMoniker": "apiSIA\\Controllers\\facultadController.cs",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Controllers\\facultadController.cs",
+              "RelativeToolTip": "apiSIA\\Controllers\\facultadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T00:07:03.811Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

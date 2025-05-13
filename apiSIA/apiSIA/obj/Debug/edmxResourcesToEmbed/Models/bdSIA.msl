@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bdSIAModelStoreContainer" CdmEntityContainer="bdSIAEntities">
+    <EntitySetMapping Name="tblAsignaturas">
+      <EntityTypeMapping TypeName="bdSIAModel.tblAsignatura">
+        <MappingFragment StoreEntitySet="tblAsignatura">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="idPRO" ColumnName="idPRO" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDetMats">
+      <EntityTypeMapping TypeName="bdSIAModel.tblDetMat">
+        <MappingFragment StoreEntitySet="tblDetMat">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMat" ColumnName="idMat" />
+          <ScalarProperty Name="idASI" ColumnName="idASI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstudiantes">
+      <EntityTypeMapping TypeName="bdSIAModel.tblEstudiante">
+        <MappingFragment StoreEntitySet="tblEstudiante">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NroDoc" ColumnName="NroDoc" />
+          <ScalarProperty Name="idTDOC" ColumnName="idTDOC" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="idPRO" ColumnName="idPRO" />
+          <ScalarProperty Name="idJOR" ColumnName="idJOR" />
+          <ScalarProperty Name="Observac" ColumnName="Observac" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFacultads">
+      <EntityTypeMapping TypeName="bdSIAModel.tblFacultad">
+        <MappingFragment StoreEntitySet="tblFacultad">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblJornadas">
+      <EntityTypeMapping TypeName="bdSIAModel.tblJornada">
+        <MappingFragment StoreEntitySet="tblJornada">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMatriculas">
+      <EntityTypeMapping TypeName="bdSIAModel.tblMatricula">
+        <MappingFragment StoreEntitySet="tblMatricula">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idPER" ColumnName="idPER" />
+          <ScalarProperty Name="idEST" ColumnName="idEST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPeriodoes">
+      <EntityTypeMapping TypeName="bdSIAModel.tblPeriodo">
+        <MappingFragment StoreEntitySet="tblPeriodo">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProgramas">
+      <EntityTypeMapping TypeName="bdSIAModel.tblPrograma">
+        <MappingFragment StoreEntitySet="tblPrograma">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="idFAC" ColumnName="idFAC" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTipoDocs">
+      <EntityTypeMapping TypeName="bdSIAModel.tblTipoDoc">
+        <MappingFragment StoreEntitySet="tblTipoDoc">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

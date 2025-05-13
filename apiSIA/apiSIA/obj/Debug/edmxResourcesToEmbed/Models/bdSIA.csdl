@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdSIAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblAsignatura">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="idPRO" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tblPrograma" Relationship="Self.FK__tblAsigna__idPRO__6477ECF3" FromRole="tblAsignatura" ToRole="tblPrograma" />
+    <NavigationProperty Name="tblDetMats" Relationship="Self.FK__tblDetMat__idASI__6B24EA82" FromRole="tblAsignatura" ToRole="tblDetMat" />
+  </EntityType>
+  <EntityType Name="tblDetMat">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="idMat" Type="Int32" Nullable="false" />
+    <Property Name="idASI" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblAsignatura" Relationship="Self.FK__tblDetMat__idASI__6B24EA82" FromRole="tblDetMat" ToRole="tblAsignatura" />
+    <NavigationProperty Name="tblMatricula" Relationship="Self.FK__tblDetMat__idMat__6A30C649" FromRole="tblDetMat" ToRole="tblMatricula" />
+  </EntityType>
+  <EntityType Name="tblEstudiante">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="NroDoc" Type="Int32" Nullable="false" />
+    <Property Name="idTDOC" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPRO" Type="Int32" Nullable="false" />
+    <Property Name="idJOR" Type="Int32" />
+    <Property Name="Observac" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tblJornada" Relationship="Self.FK__tblEstudi__idJOR__66603565" FromRole="tblEstudiante" ToRole="tblJornada" />
+    <NavigationProperty Name="tblPrograma" Relationship="Self.FK__tblEstudi__idPRO__656C112C" FromRole="tblEstudiante" ToRole="tblPrograma" />
+    <NavigationProperty Name="tblTipoDoc" Relationship="Self.FK__tblEstudi__idTDO__6754599E" FromRole="tblEstudiante" ToRole="tblTipoDoc" />
+    <NavigationProperty Name="tblMatriculas" Relationship="Self.FK__tblMatric__idEST__693CA210" FromRole="tblEstudiante" ToRole="tblMatricula" />
+  </EntityType>
+  <EntityType Name="tblFacultad">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" />
+    <NavigationProperty Name="tblProgramas" Relationship="Self.FK__tblProgra__idFAC__6383C8BA" FromRole="tblFacultad" ToRole="tblPrograma" />
+  </EntityType>
+  <EntityType Name="tblJornada">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" />
+    <NavigationProperty Name="tblEstudiantes" Relationship="Self.FK__tblEstudi__idJOR__66603565" FromRole="tblJornada" ToRole="tblEstudiante" />
+  </EntityType>
+  <EntityType Name="tblMatricula">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="idPER" Type="Int32" Nullable="false" />
+    <Property Name="idEST" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblDetMats" Relationship="Self.FK__tblDetMat__idMat__6A30C649" FromRole="tblMatricula" ToRole="tblDetMat" />
+    <NavigationProperty Name="tblEstudiante" Relationship="Self.FK__tblMatric__idEST__693CA210" FromRole="tblMatricula" ToRole="tblEstudiante" />
+    <NavigationProperty Name="tblPeriodo" Relationship="Self.FK__tblMatric__idPER__68487DD7" FromRole="tblMatricula" ToRole="tblPeriodo" />
+  </EntityType>
+  <EntityType Name="tblPeriodo">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tblMatriculas" Relationship="Self.FK__tblMatric__idPER__68487DD7" FromRole="tblPeriodo" ToRole="tblMatricula" />
+  </EntityType>
+  <EntityType Name="tblPrograma">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="idFAC" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tblAsignaturas" Relationship="Self.FK__tblAsigna__idPRO__6477ECF3" FromRole="tblPrograma" ToRole="tblAsignatura" />
+    <NavigationProperty Name="tblEstudiantes" Relationship="Self.FK__tblEstudi__idPRO__656C112C" FromRole="tblPrograma" ToRole="tblEstudiante" />
+    <NavigationProperty Name="tblFacultad" Relationship="Self.FK__tblProgra__idFAC__6383C8BA" FromRole="tblPrograma" ToRole="tblFacultad" />
+  </EntityType>
+  <EntityType Name="tblTipoDoc">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" />
+    <NavigationProperty Name="tblEstudiantes" Relationship="Self.FK__tblEstudi__idTDO__6754599E" FromRole="tblTipoDoc" ToRole="tblEstudiante" />
+  </EntityType>
+  <Association Name="FK__tblAsigna__idPRO__6477ECF3">
+    <End Role="tblPrograma" Type="Self.tblPrograma" Multiplicity="1" />
+    <End Role="tblAsignatura" Type="Self.tblAsignatura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPrograma">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblAsignatura">
+        <PropertyRef Name="idPRO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblDetMat__idASI__6B24EA82">
+    <End Role="tblAsignatura" Type="Self.tblAsignatura" Multiplicity="1" />
+    <End Role="tblDetMat" Type="Self.tblDetMat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblAsignatura">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblDetMat">
+        <PropertyRef Name="idASI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblDetMat__idMat__6A30C649">
+    <End Role="tblMatricula" Type="Self.tblMatricula" Multiplicity="1" />
+    <End Role="tblDetMat" Type="Self.tblDetMat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMatricula">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblDetMat">
+        <PropertyRef Name="idMat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblEstudi__idJOR__66603565">
+    <End Role="tblJornada" Type="Self.tblJornada" Multiplicity="0..1" />
+    <End Role="tblEstudiante" Type="Self.tblEstudiante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblJornada">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblEstudiante">
+        <PropertyRef Name="idJOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblEstudi__idPRO__656C112C">
+    <End Role="tblPrograma" Type="Self.tblPrograma" Multiplicity="1" />
+    <End Role="tblEstudiante" Type="Self.tblEstudiante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPrograma">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblEstudiante">
+        <PropertyRef Name="idPRO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblEstudi__idTDO__6754599E">
+    <End Role="tblTipoDoc" Type="Self.tblTipoDoc" Multiplicity="1" />
+    <End Role="tblEstudiante" Type="Self.tblEstudiante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTipoDoc">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblEstudiante">
+        <PropertyRef Name="idTDOC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblMatric__idEST__693CA210">
+    <End Role="tblEstudiante" Type="Self.tblEstudiante" Multiplicity="1" />
+    <End Role="tblMatricula" Type="Self.tblMatricula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEstudiante">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblMatricula">
+        <PropertyRef Name="idEST" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblProgra__idFAC__6383C8BA">
+    <End Role="tblFacultad" Type="Self.tblFacultad" Multiplicity="1" />
+    <End Role="tblPrograma" Type="Self.tblPrograma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFacultad">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblPrograma">
+        <PropertyRef Name="idFAC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblMatric__idPER__68487DD7">
+    <End Role="tblPeriodo" Type="Self.tblPeriodo" Multiplicity="1" />
+    <End Role="tblMatricula" Type="Self.tblMatricula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPeriodo">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="tblMatricula">
+        <PropertyRef Name="idPER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bdSIAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblAsignaturas" EntityType="Self.tblAsignatura" />
+    <EntitySet Name="tblDetMats" EntityType="Self.tblDetMat" />
+    <EntitySet Name="tblEstudiantes" EntityType="Self.tblEstudiante" />
+    <EntitySet Name="tblFacultads" EntityType="Self.tblFacultad" />
+    <EntitySet Name="tblJornadas" EntityType="Self.tblJornada" />
+    <EntitySet Name="tblMatriculas" EntityType="Self.tblMatricula" />
+    <EntitySet Name="tblPeriodoes" EntityType="Self.tblPeriodo" />
+    <EntitySet Name="tblProgramas" EntityType="Self.tblPrograma" />
+    <EntitySet Name="tblTipoDocs" EntityType="Self.tblTipoDoc" />
+    <AssociationSet Name="FK__tblAsigna__idPRO__6477ECF3" Association="Self.FK__tblAsigna__idPRO__6477ECF3">
+      <End Role="tblPrograma" EntitySet="tblProgramas" />
+      <End Role="tblAsignatura" EntitySet="tblAsignaturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblDetMat__idASI__6B24EA82" Association="Self.FK__tblDetMat__idASI__6B24EA82">
+      <End Role="tblAsignatura" EntitySet="tblAsignaturas" />
+      <End Role="tblDetMat" EntitySet="tblDetMats" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblDetMat__idMat__6A30C649" Association="Self.FK__tblDetMat__idMat__6A30C649">
+      <End Role="tblMatricula" EntitySet="tblMatriculas" />
+      <End Role="tblDetMat" EntitySet="tblDetMats" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblEstudi__idJOR__66603565" Association="Self.FK__tblEstudi__idJOR__66603565">
+      <End Role="tblJornada" EntitySet="tblJornadas" />
+      <End Role="tblEstudiante" EntitySet="tblEstudiantes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblEstudi__idPRO__656C112C" Association="Self.FK__tblEstudi__idPRO__656C112C">
+      <End Role="tblPrograma" EntitySet="tblProgramas" />
+      <End Role="tblEstudiante" EntitySet="tblEstudiantes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblEstudi__idTDO__6754599E" Association="Self.FK__tblEstudi__idTDO__6754599E">
+      <End Role="tblTipoDoc" EntitySet="tblTipoDocs" />
+      <End Role="tblEstudiante" EntitySet="tblEstudiantes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblMatric__idEST__693CA210" Association="Self.FK__tblMatric__idEST__693CA210">
+      <End Role="tblEstudiante" EntitySet="tblEstudiantes" />
+      <End Role="tblMatricula" EntitySet="tblMatriculas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblProgra__idFAC__6383C8BA" Association="Self.FK__tblProgra__idFAC__6383C8BA">
+      <End Role="tblFacultad" EntitySet="tblFacultads" />
+      <End Role="tblPrograma" EntitySet="tblProgramas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblMatric__idPER__68487DD7" Association="Self.FK__tblMatric__idPER__68487DD7">
+      <End Role="tblPeriodo" EntitySet="tblPeriodoes" />
+      <End Role="tblMatricula" EntitySet="tblMatriculas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
