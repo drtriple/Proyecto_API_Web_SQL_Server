@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apisia\\controllers\\facultadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\controllers\\facultadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\apisia\\apisia\\models\\tblprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\models\\tblprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\apisia\\apisia\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\apisia\\apisia\\clases\\clsopeprog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\clases\\clsopeprog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\apisia\\apisia\\clases\\clsopefac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\clases\\clsopefac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\apisia\\apisia\\controllers\\programacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03A71F73-44AE-43DE-88A9-9D537D86468D}|apiSIA\\apiSIA.csproj|solutionrelative:apisia\\controllers\\programacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tblPrograma.cs",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Models\\tblPrograma.cs",
+              "RelativeDocumentMoniker": "apiSIA\\Models\\tblPrograma.cs",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Models\\tblPrograma.cs",
+              "RelativeToolTip": "apiSIA\\Models\\tblPrograma.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T03:37:19.211Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WebApiConfig.cs",
-              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\App_Start\\WebApiConfig.cs",
-              "RelativeDocumentMoniker": "apiSIA\\App_Start\\WebApiConfig.cs",
-              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\App_Start\\WebApiConfig.cs",
-              "RelativeToolTip": "apiSIA\\App_Start\\WebApiConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T00:45:26.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "clsOpeFac.cs",
-              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Clases\\clsOpeFac.cs",
-              "RelativeDocumentMoniker": "apiSIA\\Clases\\clsOpeFac.cs",
-              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Clases\\clsOpeFac.cs",
-              "RelativeToolTip": "apiSIA\\Clases\\clsOpeFac.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAxAAAAAAAAAA==",
+              "Title": "programaController.cs",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Controllers\\programaController.cs",
+              "RelativeDocumentMoniker": "apiSIA\\Controllers\\programaController.cs",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Controllers\\programaController.cs",
+              "RelativeToolTip": "apiSIA\\Controllers\\programaController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:47:10.094Z",
+              "WhenOpened": "2025-05-14T03:28:36.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "facultadController.cs",
-              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Controllers\\facultadController.cs",
-              "RelativeDocumentMoniker": "apiSIA\\Controllers\\facultadController.cs",
-              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Controllers\\facultadController.cs",
-              "RelativeToolTip": "apiSIA\\Controllers\\facultadController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "clsOpeProg.cs",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Clases\\clsOpeProg.cs",
+              "RelativeDocumentMoniker": "apiSIA\\Clases\\clsOpeProg.cs",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\apiSIA\\apiSIA\\Clases\\clsOpeProg.cs",
+              "RelativeToolTip": "apiSIA\\Clases\\clsOpeProg.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T00:07:03.811Z",
+              "WhenOpened": "2025-05-14T03:22:38.896Z",
               "EditorCaption": ""
             }
           ]

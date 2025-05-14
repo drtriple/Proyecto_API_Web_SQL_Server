@@ -1,8 +1,20 @@
-﻿var dir = "http://localhost:XXXXX/api/";
+﻿var urlFacultad = "http://localhost:54914/api/facultad";
+var urlPrograma = "http://localhost:54914/api/programa";
 
 jQuery(function () {
     //Carga el menú
     $("#dvMenu").load("../Paginas/Menu.html");
+
+    cargarFacultades();
+    // Cuando cambie el combo de facultades
+    $("#cboFacultad").on("change", function () {
+        let idFAC = $(this).val();
+        if (idFAC) {
+            cargarProgramas(idFAC);
+        } else {
+            $("#cboPrograma").empty().append('<option value="">Seleccione Programa...</option>');
+        }
+    });
 
     //Registrar los botones para responder al evento click
     $("#btnAgre").on("click", function () {
@@ -18,8 +30,7 @@ jQuery(function () {
         //Consultar();
     });
     $("#btnCanc").on("click", function () {
-        alert("Cancelar");
-        //Cancelar();
+        mensajeInfo("Formulario limpio");
     });
     $("#btnImpr").on("click", function () {
         alert("Impresión");
@@ -45,6 +56,47 @@ function mensajeOk(texto) {
     $("#dvMensaje").addClass("alert alert-success");
     $("#dvMensaje").html(texto);
 }
+
+function cargarFacultades() {
+    fetch(urlFacultad)
+        .then(res => res.json())
+        .then(data => {
+            let combo = $("#cboFacultad");
+            combo.empty().append('<option value="">Seleccione Facultad...</option>');
+
+            data.forEach(fac => {
+                combo.append(`<option value="${fac.Codigo}">${fac.Nombre}</option>`);
+            });
+        })
+        .catch(err => mensajeError("Error cargando facultades: " + err));
+}
+
+function cargarProgramas(idFAC) {
+    fetch(`${urlPrograma}/${idFAC}`)
+        .then(res => {
+            if (!res.ok) throw new Error("Error consultando la API");
+            return res.json();
+        })
+        .then(response => {
+            let combo = $("#cboPrograma");
+            combo.empty().append('<option value="">Seleccione Programa...</option>');
+
+            // Verificar si hay programas
+            if (Array.isArray(response.Data) && response.Data.length > 0) {
+                response.Data.forEach(prog => {
+                    combo.append(`<option value="${prog.Codigo}">${prog.Nombre}</option>`);
+                });
+            } else {
+                // No hay programas disponibles
+                mensajeInfo("No se encontraron programas para esta facultad.");
+            }
+        })
+        .catch(err => {
+            $("#cboPrograma").empty().append('<option value="">Seleccione Programa...</option>');
+            mensajeError("Error cargando programas: " + err.message);
+        });
+}
+
 
 async function ejecutarComando(accion) {
     //Capturar los datos de entrada

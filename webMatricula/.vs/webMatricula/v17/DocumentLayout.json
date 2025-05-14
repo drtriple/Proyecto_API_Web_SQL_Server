@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\webmatricula\\webmatricula\\paginas\\scripts\\frmasignatura.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|solutionrelative:webmatricula\\paginas\\scripts\\frmasignatura.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\webmatricula\\webmatricula\\paginas\\scripts\\frmfacultad.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|solutionrelative:webmatricula\\paginas\\scripts\\frmfacultad.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\webmatricula\\webmatricula\\paginas\\frmfacultad.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webmatricula\\paginas\\frmfacultad.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|solutionrelative:webmatricula\\paginas\\frmfacultad.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|d:\\datos\\desktop\\itm\\quinto semestre\\programacion\\app4\\webmatricula\\webmatricula\\paginas\\frmasignatura.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC675F39-A6FA-4ED3-8A80-13B238EA195D}|webMatricula\\webMatricula.csproj|solutionrelative:webmatricula\\paginas\\frmasignatura.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,19 +35,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmAsignatura.js",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webMatricula\\Paginas\\Scripts\\frmAsignatura.js",
+              "RelativeDocumentMoniker": "webMatricula\\Paginas\\Scripts\\frmAsignatura.js",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webMatricula\\Paginas\\Scripts\\frmAsignatura.js",
+              "RelativeToolTip": "webMatricula\\Paginas\\Scripts\\frmAsignatura.js",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwBYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-14T03:55:19.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmAsignatura.html",
+              "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webMatricula\\Paginas\\frmAsignatura.html",
+              "RelativeDocumentMoniker": "webMatricula\\Paginas\\frmAsignatura.html",
+              "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webMatricula\\Paginas\\frmAsignatura.html",
+              "RelativeToolTip": "webMatricula\\Paginas\\frmAsignatura.html",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-14T03:55:04.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "frmFacultad.js",
               "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webMatricula\\Paginas\\Scripts\\frmFacultad.js",
               "RelativeDocumentMoniker": "webMatricula\\Paginas\\Scripts\\frmFacultad.js",
               "ToolTip": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webMatricula\\Paginas\\Scripts\\frmFacultad.js",
               "RelativeToolTip": "webMatricula\\Paginas\\Scripts\\frmFacultad.js",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAwwHEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-05-13T00:38:23.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmFacultad.html",
               "DocumentMoniker": "D:\\Datos\\Desktop\\ITM\\QUINTO SEMESTRE\\PROGRAMACION\\app4\\webMatricula\\webMatricula\\Paginas\\frmFacultad.html",
               "RelativeDocumentMoniker": "webMatricula\\Paginas\\frmFacultad.html",

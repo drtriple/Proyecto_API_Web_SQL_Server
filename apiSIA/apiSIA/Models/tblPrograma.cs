@@ -9,6 +9,7 @@
 
 namespace apiSIA.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -27,9 +28,12 @@ namespace apiSIA.Models
         public bool Activo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [JsonIgnore]
         public virtual ICollection<tblAsignatura> tblAsignaturas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [JsonIgnore]
         public virtual ICollection<tblEstudiante> tblEstudiantes { get; set; }
+        [JsonIgnore]
         public virtual tblFacultad tblFacultad { get; set; }
     }
 }
